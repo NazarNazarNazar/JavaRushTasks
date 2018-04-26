@@ -31,11 +31,11 @@ public class Solution<T> extends ArrayList<T> {
 
         @Override
         public boolean hasNext() {
-            if(size() == 0) {
+            if (size() == 0) {
                 return false;
             }
 
-            if(cursor >= size()) {
+            if (cursor >= size()) {
                 iterator = Solution.super.iterator();
                 cursor = 0;
             }
